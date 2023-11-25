@@ -54,4 +54,40 @@ To be updated.
 
 ### Experimental results with different number of clusters and clustering methods.
 
-To be updated.
+More intermediate number of clusters are shown in following table. Both the test accuracy and training time increase with the increase of the number of clusters $K$, except $K>800$.
+
+- Table: Test accuracy (\%) and training time (h) with different number of clusters.
+The experiments are conducted on CIFAR-10N Worst dataset with 5000 training samples.
+
+| **Clusters $K$** | 1     | 5     | 10    | 50    | 100   | 200   | 500   | 800   | 1000  |
+|--------------------|-------|-------|-------|-------|-------|-------|-------|-------|-------|
+| **Accuracy**       | 69.78 | 70.35 | 71.02 | 72.85 | 73.30 | 74.27 | 75.26 | 76.03 | 74.37 |
+| **Training time**  | 2.2h  | 2.3h  | 2.4h  | 2.6h  | 2.7h  | 3.0h  | 4.5h  | 5.0h  | 5.5h  |
+
+
+Second, we analyse the sensitivity for the choices of different clustering methods. The experiment results demonstrate that our method achieves similar test accuracy and training time among different clustering algorithms, except DBSCAN.
+
+- Table: Test accuracy (\%) and training time (h) with different clustering methods.
+The experiments are conducted on CIFAR-10N Worst dataset with 5000 training samples.
+
+| **Methods**               | K-Means | K-Means++ | Hierarchical clustering | DBSCAN |
+|---------------------------|---------|-----------|--------------------------|--------|
+| **Accuracy**              | 74.27   | 74.10     | 74.25                    | 70.84  |
+| **Training time**         | 3h      | 3h        | 3h                       | 2.5h   |
+
+
+### Validity analysis of the proposed method. 
+
+Comparison of the proposed cluster-dependent sample selection strategy and the naive sample selection.
+The red lines are the decision lines for the clean sample selection, i.e. The samples on the left of the lines will be selected as clean samples in the algorithms.
+
+- Figure a: Clusters are sorted by the selection criteria.
+![fig:loss-sample-selection](./docs/sample_selection_line.png)
+
+- Figure b: Clusters are first grouped by the main classes and then sorted by the selection criteria.
+![fig:loss-sample-selection-with-class](./docs/sample_selection_line_with_class.png)
+
+
+The above figures illustrates the effectiveness of the proposed cluster-dependent sample selection strategy.
+In the process of the small-loss samples selection, the proposed method adds another dimension and thus have variable criteria for different clusters. The proposed method can select more precise and adequate clean samples and thus achieve better evaluation accuracy.
+Besides, Figure b also shows the variability of the noise distribution inside each class.

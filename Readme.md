@@ -49,7 +49,18 @@ Experimental results illustrates the effectiveness of the proposed method, excep
 
 ### Experimental results with different network structures.
 
-To be updated.
+Below are the experimental results obtained with both ResNet and ViT architectures. The experiments illustrate that the proposed method exhibits easy generalization to both ResNet and ViT backbones, yielding comparable performance.
+
+Table: Test accuracy (%) on CIFAR-10 dataset with synthetic symmetric and asymmetric label noise.
+
+| Backbone        | Sym. $20\%$ | Sym. $40\%$ | Sym. $60\%$ | Sym. $80\%$ | Sym. $90\%$ | Asy. (40\%) |
+|------------------|-------------|-------------|-------------|-------------|-------------|-------------|
+| ResNet-18        | 95.78       | 95.21       | 94.95       | 90.87       | 74.49       | 92.06       |
+| ResNet-34        | 96.35       | 95.50       | 95.36       | 91.54       | 77.94       | 92.63       |
+| ResNet-50        | 96.39       | 95.62       | 95.33       | 91.47       | 76.26       | 92.74       |
+| ViT-base         | 94.89       | 94.51       | 94.23       | 90.14       | 75.38       | 91.96       |
+
+
 
 
 ### Experimental results with different number of clusters and clustering methods.

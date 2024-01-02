@@ -368,7 +368,7 @@ elif args.net_nums == 'dual_networks':
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
 
-        print('\n' + '=' * 20 + 'ClusterMix' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCL' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '3.0.1':
@@ -379,7 +379,7 @@ elif args.net_nums == 'dual_networks':
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
 
-        print('\n' + '=' * 20 + 'ClusterMixPlusVersion, using mixup and fmix' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCLPlusVersion, using mixup and fmix' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '3.1':
@@ -389,7 +389,7 @@ elif args.net_nums == 'dual_networks':
                                         loss_controller=loss_controller,
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
-        print('\n' + '=' * 20 + 'ClusterMix Plus (Mixup + CR)' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCL Plus (Mixup + CR)' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '3.2.1':
@@ -399,7 +399,7 @@ elif args.net_nums == 'dual_networks':
                                         loss_controller=loss_controller,
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
-        print('\n' + '=' * 20 + 'ClusterMix UpdateVersion-1' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCL UpdateVersion-1' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '3.3':
@@ -409,7 +409,7 @@ elif args.net_nums == 'dual_networks':
                                         loss_controller=loss_controller,
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
-        print('\n' + '=' * 20 + 'ClusterMix Supervised' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCL Supervised' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '3.4':
@@ -421,7 +421,7 @@ elif args.net_nums == 'dual_networks':
                                         dataset_generator=dataset_generator,
                                         device=device, args=args)
 
-        print('\n' + '=' * 20 + 'ClusterMixWithContrastiveLoss' + '=' * 20)
+        print('\n' + '=' * 20 + 'ClusterCLWithContrastiveLoss' + '=' * 20)
         train_module.train_with_warmup(epochs=args.epochs, epochs_warmup=args.epochs_warmup)
 
     elif args.training_mode == '4':

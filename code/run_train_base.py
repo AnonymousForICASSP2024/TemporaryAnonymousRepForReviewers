@@ -86,12 +86,12 @@ def get_args(*para, **kwargs):
                                      "0.2: Train with clean data, using mixup, consistency regularization.\n"
                                      "1: Train with noisy data.\n"
                                      "1.2: Train with noisy data, using mixup, consistency regularization.\n"
-                                     "3.0: ClusterMix.\n"
-                                     "3.0.1: ClusterMixPlusVersion, using mixup and fmix.\n"
-                                     "3.1: ClusterMix Plus: using mixup, consistency regularization.\n"
-                                     "3.2.1: ClusterMix UpdateVersion-1."
-                                     "3.3: ClusterMix with supervised training."
-                                     "3.4: ClusterMix with contrastive learning."
+                                     "3.0: ClusterCL.\n"
+                                     "3.0.1: ClusterCLPlusVersion, using mixup and fmix.\n"
+                                     "3.1: ClusterCL Plus: using mixup, consistency regularization.\n"
+                                     "3.2.1: ClusterCL UpdateVersion-1."
+                                     "3.3: ClusterCL with supervised training."
+                                     "3.4: ClusterCL with contrastive learning."
                                      "4: ProMix.\n"
                                      "5.0: DivideMix.\n"
                                      "5.1: DivideMix with supervised training.\n"
@@ -140,12 +140,12 @@ def make_output_dir(params):
         '0.2': "TrainCleanMixupCR",
         '1': "TrainNoisy",
         '1.2': "TrainNoisyMixupCR",
-        '3.0': "ClusterMix",
-        '3.0.1': "ClusterMixPlusVersion",
-        '3.1': "ClusterMixPlus",
-        '3.2.1': "ClusterMix-UpdateVersion-1",
-        '3.3': "ClusterMixWithSupervisedTraining",
-        '3.4': "ClusterMixWithContrastiveLearning",
+        '3.0': "ClusterCL",
+        '3.0.1': "ClusterCLPlusVersion",
+        '3.1': "ClusterCLPlus",
+        '3.2.1': "ClusterCL-UpdateVersion-1",
+        '3.3': "ClusterCLWithSupervisedTraining",
+        '3.4': "ClusterCLWithContrastiveLearning",
         '4': "ProMix",
         '5.0': "DivideMix",
         '5.1': "DivideMixWithSupervisedTraining",

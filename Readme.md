@@ -27,7 +27,7 @@ The test accuracy (\%) is evaluated on Clothing1M validation set, WebVision vali
 | DivideMix            | 74.76       | 56.57             | 77.32   | 75.20  |
 | ProMix               | 72.85            | 55.39             | 75.73         | 74.96        |
 | SOP                  | 73.50      | 48.78             | 76.60     | 69.10    |
-| ClusterMix (ours)   | 74.84            | 61.98        | 78.19     | 75.54    |
+| ClusterCL (ours)   | 74.84            | 61.98        | 78.19     | 75.54    |
 
 We evaluate the proposed method on three larger datasets, i.e. Clothing1M with 1 million samples, WebVision with 2.4 million images, and ILSVRC12 with approximately 66 thousand images.
 Experimental results illustrates the effectiveness of the proposed method on larger datasets.
@@ -36,7 +36,7 @@ Experimental results illustrates the effectiveness of the proposed method on lar
 
 - Table: Experiments on CIFAR-10 dataset (50000 training samples) with symmetric label noise. 
 
-| ACC(%) |     T-Revision    |     DivideMix    |     ClusterMix    |     ClusterMix (Given clean data)    |     SPICE (self-supervised)   |
+| ACC(%) |     T-Revision    |     DivideMix    |     ClusterCL    |     ClusterCL (Given clean data)    |     SPICE (self-supervised)   |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |     20% Noise    |     88.10    |     95.97    |     96.35    |     96.52    |     92.26    |
 |     40% Noise    |     84.11    |     94.82    |     95.50    |     95.83    |     92.26    |
